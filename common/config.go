@@ -5,7 +5,7 @@ var (
 	Php       string
 	Webshell  string
 	Password  string
-	Help      string
+	Help      bool
 	Pass      string
 	shellphp  string
 	php       string
@@ -15,7 +15,17 @@ var (
 	aspx      string
 	Filename  string
 	Webshells string
-	encode    string
-	ccccc     string
+	Encode    string
+	Javaweb   string
 	titles    string
+)
+
+var (
+	tomcat string
+	spring string
+	resin  string
+	jdk    string
+	Memory string
+	Bypass string
+	Lei    string
 )

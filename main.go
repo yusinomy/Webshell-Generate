@@ -9,10 +9,7 @@ import (
 
 func main() {
 	start := time.Now()
-	common.Parse1()
-	common.Flag()
-	shell.Plugins()
-	common.File()
+	shell.Exec()
 	end := time.Now().Sub(start)
-	fmt.Println("[*]:", common.Filename, "\n[*]: 生成耗时:", end)
+	fmt.Println("[*]FileName:", common.Filename, "\n[*]Password:", common.Password, "\n[*]生成耗时:", end)
 }

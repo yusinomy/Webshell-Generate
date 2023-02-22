@@ -3,6 +3,7 @@ package common
 import (
 	"flag"
 	"fmt"
+	"os"
 	"runtime"
 	"runtime/debug"
 	"time"
@@ -30,19 +31,28 @@ __      _____| |__  ___| |__   ___| | |
 \ \ /\ / / _ \ '_ \/ __| '_ \ / _ \ | |
  \ V  V /  __/ |_) \__ \ | | |  __/ | |
   \_/\_/ \___|_.__/|___/_| |_|\___|_|_|
-		                   vsersion 1.0
-		-p 生成密码，默认密码为rural666		
-		-s php | jsp | asp | aspx`
+		                   version  1.1
+		-p password | Default password	noway
+		-s php | jsp | asp | aspx
+		-e xor | aes 
+		-d be | god
+`
 	fmt.Println(titles)
 }
 
 func Flag() {
 	title()
 	flag.StringVar(&Webshell, "s", "", "-s php | jsp | asp | aspx")
-	flag.StringVar(&Password, "p", "rural666", "-p 生成密码，默认密码为rural666")
-	flag.StringVar(&Help, "h", "", "help")
-	//flag.StringVar(&encode, "e", "", "指定编码")
-	//flag.StringVar(&ccccc, "d", "", "-d 冰蝎 | 哥斯拉 ")
-	//flag.Parse()
-
+	flag.StringVar(&Password, "p", "noway", "-p password")
+	flag.BoolVar(&Help, "h", false, "help")
+	flag.StringVar(&Encode, "e", "", " xor aes 128 only Behinder and Godzilla")
+	flag.StringVar(&Memory, "d", "", "-d Behinder(Be) | Godzilla(God) ")
+	flag.StringVar(&Bypass, "b", "", "something bypass waf | php ")
+	flag.StringVar(&Lei, "l", "", "-l spring tomcat resin jdk")
+	flag.Parse()
+	if Help {
+		flag.PrintDefaults()
+		os.Exit(0)
+	}
+	return
 }
