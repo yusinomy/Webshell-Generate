@@ -1,3 +1,16 @@
+1.2：
+
+```
+1：Unicode编码，目前只支持哥斯拉jsp编码
+2：当未指定密码时，将生成随机的密码，随机的文件名
+```
+
+![image-20230228194913087](C:\Users\13401\AppData\Roaming\Typora\typora-user-images\image-20230228194913087.png)
+
+
+
+1.1：
+
 ```
 
               _         _          _ _
@@ -66,4 +79,8 @@ The following is general usage
 ![image-20230222150923257](C:\Users\13401\AppData\Roaming\Typora\typora-user-images\image-20230222150923257.png)
 
 End:Update every two months
+
+
+
+
 

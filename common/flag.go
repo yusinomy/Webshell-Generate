@@ -43,9 +43,9 @@ __      _____| |__  ___| |__   ___| | |
 func Flag() {
 	title()
 	flag.StringVar(&Webshell, "s", "", "-s php | jsp | asp | aspx")
-	flag.StringVar(&Password, "p", "noway", "-p password")
+	flag.StringVar(&Password, "p", " ", "-p password")
 	flag.BoolVar(&Help, "h", false, "help")
-	flag.StringVar(&Encode, "e", "", " xor aes 128 only Behinder and Godzilla")
+	flag.StringVar(&Encode, "e", "", " unicode:such as -d be -e unicode |xor aes 128 only Behinder and Godzilla")
 	flag.StringVar(&Memory, "d", "", "-d Behinder(Be) | Godzilla(God) ")
 	flag.StringVar(&Bypass, "b", "", "something bypass waf | php ")
 	flag.StringVar(&Lei, "l", "", "-l spring tomcat resin jdk")

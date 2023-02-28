@@ -8,5 +8,4 @@ func Paseshell() {
 	if Webshell == " " && Password == " " {
 		return
 	}
-
 }

