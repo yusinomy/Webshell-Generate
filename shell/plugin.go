@@ -15,10 +15,8 @@ import (
 
 func Exec() {
 	common.Flag()
-	common.Parse1()
 	Common()
 	Bypass()
-	Godzilla.Jspshell()
 	Meme()
 	common.File()
 }
