@@ -5,7 +5,7 @@
 2：当未指定密码时，将生成随机的密码，随机的文件名
 ```
 
-![image-20230228194913087](C:\Users\13401\AppData\Roaming\Typora\typora-user-images\image-20230228194913087.png)
+![img](https://pic.certbug.com/i/2023/02/28/xqtkxd.webp)
 
 
 
@@ -74,9 +74,9 @@ The following is general usage
  .\webshell.exe -s php -p 666
 ```
 
-![image-20230222150909571](C:\Users\13401\AppData\Roaming\Typora\typora-user-images\image-20230222150909571.png)
+![img](https://pic.certbug.com/i/2023/02/28/xqtbhl.webp)
 
-![image-20230222150923257](C:\Users\13401\AppData\Roaming\Typora\typora-user-images\image-20230222150923257.png)
+![img](https://pic.certbug.com/i/2023/02/28/xqtwzh.webp)
 
 End:Update every two months
 
